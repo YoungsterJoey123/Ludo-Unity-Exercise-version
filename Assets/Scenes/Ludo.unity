@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 11054585}
   - component: {fileID: 11054584}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Player3Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 165399346}
   - component: {fileID: 165399345}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Player2Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 192869606}
   - component: {fileID: 192869607}
   m_Layer: 0
-  m_Name: Player3PiecesArea
+  m_Name: Player3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,13 +362,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192869605}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 13.55, y: 0, z: -3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1372527824}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &192869607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,8 +381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16531e46b7f7bf4fa1dedfad1a7ac4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zValue: 1
-  GamePiece: {fileID: 2074092655631099920, guid: 307943d2c9e13244daea4d3b20ff40eb, type: 3}
 --- !u!1 &204986482
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +531,7 @@ GameObject:
   - component: {fileID: 542868114}
   - component: {fileID: 542868113}
   m_Layer: 0
-  m_Name: Plane (2)
+  m_Name: Player1Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,11 +671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130cfa9e2ff55084383cd18c4f9a4e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players:
-  - {fileID: 1219390990}
-  - {fileID: 1890531236}
-  - {fileID: 192869605}
-  - {fileID: 1189235781}
 --- !u!1 &1189235781
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +682,7 @@ GameObject:
   - component: {fileID: 1189235782}
   - component: {fileID: 1189235783}
   m_Layer: 0
-  m_Name: Player4PiecesArea
+  m_Name: Player4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,13 +696,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189235781}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -2.45, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1372527824}
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1189235783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,8 +715,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16531e46b7f7bf4fa1dedfad1a7ac4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zValue: 3
-  GamePiece: {fileID: 2074092655631099920, guid: 307943d2c9e13244daea4d3b20ff40eb, type: 3}
 --- !u!1 &1219390990
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +726,7 @@ GameObject:
   - component: {fileID: 1219390991}
   - component: {fileID: 1219390992}
   m_Layer: 0
-  m_Name: Player1PiecesArea
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -750,11 +741,11 @@ Transform:
   m_GameObject: {fileID: 1219390990}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.45, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1372527824}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1219390992
 MonoBehaviour:
@@ -768,8 +759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16531e46b7f7bf4fa1dedfad1a7ac4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zValue: -3
-  GamePiece: {fileID: 2074092655631099920, guid: 307943d2c9e13244daea4d3b20ff40eb, type: 3}
 --- !u!1 &1372527823
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,12 +788,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1219390991}
-  - {fileID: 1890531237}
-  - {fileID: 192869606}
-  - {fileID: 1189235782}
-  - {fileID: 165399344}
   - {fileID: 542868112}
+  - {fileID: 165399344}
   - {fileID: 11054583}
   - {fileID: 1824316173}
   m_Father: {fileID: 0}
@@ -822,7 +807,7 @@ GameObject:
   - component: {fileID: 1824316175}
   - component: {fileID: 1824316174}
   m_Layer: 0
-  m_Name: Plane (3)
+  m_Name: Player4Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,7 +914,7 @@ GameObject:
   - component: {fileID: 1890531237}
   - component: {fileID: 1890531238}
   m_Layer: 0
-  m_Name: Player2PiecesArea
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -943,13 +928,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890531236}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 13.55, y: 0, z: 3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1372527824}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1890531238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,8 +947,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16531e46b7f7bf4fa1dedfad1a7ac4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zValue: -1
-  GamePiece: {fileID: 2074092655631099920, guid: 307943d2c9e13244daea4d3b20ff40eb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -971,3 +954,7 @@ SceneRoots:
   - {fileID: 204986485}
   - {fileID: 1372527824}
   - {fileID: 993225729}
+  - {fileID: 1219390991}
+  - {fileID: 1890531237}
+  - {fileID: 192869606}
+  - {fileID: 1189235782}
