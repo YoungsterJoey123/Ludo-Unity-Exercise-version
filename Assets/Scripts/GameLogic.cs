@@ -8,12 +8,13 @@ public class GameLogic : MonoBehaviour
     int winnerFound = -1;
     int dice = UnityEngine.Random.Range(1, 7);
     Player[] players = new Player[4];
-    public GameLogic()
+    private void Start()
     {
         for (int i = 0; i < players.Length; i++)
         {
             players[i] = new Player();
         }
+
         while (winnerFound < 0)
         {
             for (int i = 0; i < players.Length; i++)
@@ -29,5 +30,7 @@ public class GameLogic : MonoBehaviour
         }
         Console.WriteLine("winner is player " + winnerFound);
     }
+        
+    
 
 }
