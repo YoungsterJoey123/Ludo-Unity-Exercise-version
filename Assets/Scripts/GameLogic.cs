@@ -14,7 +14,7 @@ public class GameLogic : MonoBehaviour
         {
             players[i] = transform.GetChild(i).gameObject;
         }
-        StartCoroutine(rollDice());
+        StartCoroutine(rollDice());//starter hele spillet
         
     }
     public IEnumerator rollDice()
@@ -25,17 +25,17 @@ public class GameLogic : MonoBehaviour
         {
             for (int i = 0; i < players.Length; i++)
             {
-                yield return new WaitForSeconds(0.2f);
-                dice = UnityEngine.Random.Range(1, 7);
-                bool winner = players[i].GetComponent<Player>().DecideAndMovePiece(dice);
+                yield return new WaitForSeconds(0.2f);//venter 0,2 sekunder
+                dice = UnityEngine.Random.Range(1, 7);//RNG fra 1 til 6
+                bool winner = players[i].GetComponent<Player>().DecideAndMovePiece(dice);//kører progarmmet
                 if (winner)
                 {
-                    winnerFound = i;
+                    winnerFound = i + 1;
                     break;
                 }
                 
             }
         }
-        Console.WriteLine("winner is player " + winnerFound);
+        print("winner is player " + winnerFound);
     }
 }
