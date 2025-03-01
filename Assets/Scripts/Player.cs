@@ -40,9 +40,16 @@ public class Player : MonoBehaviour
         }
         for (int i = 0; i < pieces.Length; i++)
         {
-            if (pieces[i].transform.position.x < 80)
+            if (pieces[i].transform.position.x < 80 && pieces[i].transform.position.x > 0)
             {
                 pieces[i].GetComponent<GamePiece>().Move(rollValue);
+                return false;
+            }
+        }
+        for (int i = 0; i < pieces.Length; i++)
+        {
+            if (pieces[i].transform.position.x < 80)
+            {
                 return false;
             }
         }
